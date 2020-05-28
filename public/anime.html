@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seccion animes</title>
+    <link rel="shortcut icon" href="img/app-icons/images.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-header bg-dark text-center text-white">
+                <h2>Formulario para la insercion de un Anime nuevo y vista de Episodios</h2>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-12">
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="nombreUsuario"
+                          class="form-control"
+                          autofocus
+                          placeholder="Digite Nombre Usuario">
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          name="claveUsuario"
+                          placeholder="Digite la clave del usuario"
+                          class="form-control"
+                          >
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="date"
+                          name="fechaCreacion"
+                          id="fechaCreacion"
+                          class="form-control"
+                          >
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          name="correo"
+                          placeholder="Digite correo"
+                          class="form-control"
+                          >
+                      </div>
+                      <div class="form-group">
+                          <select name="generoAnime" id="generoAnime" class="form-control">
+                            <option value="">Seleccione el genero del anime</option>
+                            <option value="1">Accion</option>
+                            <option value="2">Romantico</option>
+                            <option value="3">Ovas</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                        <input type="button" class="btn btn-outline-success btn-block" value="Insertar Anime">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-9 col-sm-12">
+                    <table class="table table-hover table-bordered table-dark">
+                      <thead>
+                        <tr>
+                          <th>Nombre Anime</th>
+                          <th>Autor</th>
+                          <th>Fecha Creacion</th>
+                          <th>Temporadas</th>
+                          <th>Episodios</th>
+                          <th>Editar</th>
+                          <th>Eliminar</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>
+                                One Pace
+                            </td>
+                            <td>
+                                Akira Toriyama
+                            </td>
+                            <td>
+                                12/12/12
+                            </td>
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                <a href="./episodios.html" class="btn btn-outline-info">Ver Episodios</a>
+                            </td>
+                            <td>
+                                <input type="button" class="btn btn-primary" value="Editar Anime">
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" class="btn btn-danger" value="Eliminar Anime">
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-dark text-center">
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
